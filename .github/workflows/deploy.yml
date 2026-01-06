@@ -32,7 +32,7 @@ jobs:
         with:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY_NEW }}
           source: "dist/*"
           target: "/var/www/html"
           strip_components: 1 # Removes the "dist/" folder name so files go directly into /var/www/html
